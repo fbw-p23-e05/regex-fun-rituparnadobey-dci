@@ -3,7 +3,9 @@
 
 import re
 
-pattern = '.*z.*'
+pattern = '.*z.*' 
+
+# \w*zßw*
 
 match1= (re.search(pattern, 'zebra'))
 match2= (re.search(pattern, 'awesome'))

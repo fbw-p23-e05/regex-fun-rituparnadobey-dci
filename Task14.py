@@ -2,7 +2,9 @@
 
 import re
 
-pattern = '[a-zA-Z0-9]\_'
+pattern = '[a-zA-Z0-9_]+'
+
+# \w+
 
 match1= (re.search(pattern, 'zeBra_'))
 match2= (re.search(pattern, 'zooLogy2_'))

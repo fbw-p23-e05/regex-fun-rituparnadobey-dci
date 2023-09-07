@@ -5,6 +5,8 @@ import re
 
 pattern = '[9].*'
 
+# '^9[a-z]'  or ^7\w*
+
 match1= (re.search(pattern, '9zeb125'))
 match2= (re.search(pattern, '5oolog'))
 match3= (re.search(pattern, '6ology'))

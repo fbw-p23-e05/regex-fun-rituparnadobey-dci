@@ -3,7 +3,7 @@
 
 import re
 
-pattern = '[a-zA-Z][0-9]'
+pattern = '[a-zA-Z0-9]+'
 
 match = (re.search(pattern, 'Pattern123'))
 

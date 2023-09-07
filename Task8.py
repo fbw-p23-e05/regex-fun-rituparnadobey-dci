@@ -3,13 +3,13 @@
 
 import re
 
-pattern = '[A-Z]{1}[a-z]'
+pattern = '[A-Z]{1}[a-z]+'
 
 match1= (re.search(pattern, 'abcd_'))
 match2= (re.search(pattern, 'A_adsg'))
 match3= (re.search(pattern, 'Vgshb'))
 match4= (re.search(pattern, 'vgtoD'))
-match5= (re.search(pattern, 'Dghgsz'))
+match5= (re.search(pattern, 'gGhgsz'))
 
 if match1:
     print('Match1 found:',match1.group())

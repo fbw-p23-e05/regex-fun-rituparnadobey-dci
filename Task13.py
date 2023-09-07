@@ -6,6 +6,8 @@ import re
 
 pattern = '[^z].*[^z]'
 
+# or [a-zA-Y]+z[a-yA-Y]+
+
 match1= (re.search(pattern, 'zebraz'))
 match2= (re.search(pattern, 'zoologyz'))
 match3= (re.search(pattern, 'zoology'))

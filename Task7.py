@@ -4,10 +4,10 @@
 
 import re
 
-pattern = '[a-z]\_'
+pattern = '[a-z]+_[a-z]*'
 
-match1= (re.search(pattern, 'abcd_'))
-match2= (re.search(pattern, 'cder_'))
+match1= (re.search(pattern, 'abcd_c'))
+match2= (re.search(pattern, 'cder_kji'))
 match3= (re.search(pattern, 'gfrs_jki'))
 match4= (re.search(pattern, 'vgtf_'))
 match5= (re.search(pattern, '_fgtr'))

@@ -3,7 +3,7 @@
 
 import re
 
-pattern = 'a.*b'
+pattern = '(a.+)b$'
 
 match1= (re.search(pattern, 'a_,.ölb'))
 match2= (re.search(pattern, 'A_ads'))

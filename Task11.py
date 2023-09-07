@@ -3,13 +3,13 @@
 
 import re
 
-pattern = '.*(cat)[^a-zA-Z0-9]'
+pattern = '\w+[^a-zA-Z0-9]*$'
 
-match1= (re.search(pattern, 'Thereisacat§$%'))
-match2= (re.search(pattern, 'socutecat_?=)()'))
+match1= (re.search(pattern, 'Thereisacat%'))
+match2= (re.search(pattern, 'socutecat)'))
 match3= (re.search(pattern, 'petercat1234'))
-match4= (re.search(pattern, 'cheatercat!"§$%&'))
-match5= (re.search(pattern, 'xdfcat*'))
+match4= (re.search(pattern, 'cheatercat&'))
+match5= (re.search(pattern, 'xdfcat*§$%'))
 
 if match1:
     print('Match1 found:',match1.group())
